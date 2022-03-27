@@ -1,3 +1,5 @@
+# In this project we verified the Android App Market in Google Play Store. From its price to its popularity, we traced a line through every market segment of this subject.
+
 import pandas as pd
 apps_with_duplicates = pd.read_csv("datasets/apps.csv")
 
@@ -170,3 +172,4 @@ fig.set_size_inches(11, 8)
 # User review sentiment polarity for paid vs. free apps
 ax = sns.boxplot(x = 'Type', y = 'Sentiment_Polarity', data = merged_df)
 ax.set_title('Sentiment Polarity Distribution')
+
