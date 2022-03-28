@@ -8,4 +8,6 @@ licenses_zip_ward = licenses.merge(zip_demo, on="zip") \
 # Print the results by alderman and show median income
 print(licenses_zip_ward.groupby("alderman").agg({'income':'median'}))
 
+# Only a few aldermen represent businesses in areas where the median income is greater than $62,000, which is the median income for the state of Illinois.
+
 
