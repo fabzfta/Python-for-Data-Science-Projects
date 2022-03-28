@@ -1,6 +1,8 @@
 #In this exercise we have to find the number os passangers that traveled by Chicago's public transportation through Willson station during all weekdays on July.
 #We use three different databases: cal, ridership and stations DataFrames
 
+import pandas as pd
+
 # Merging the ridership, cal, and stations tables
 ridership_cal_stations = ridership.merge(cal, on=['year','month','day']) \
 							.merge(stations, on='station_id')
